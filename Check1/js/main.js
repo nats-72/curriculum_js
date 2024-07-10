@@ -1,7 +1,8 @@
 let numbers = [2, 5, 12, 13, 15, 18, 22];
-for (let num = 0; num < numbers.length; num++)
-if(num % 2 === 0) {
-    console.log(numbers[num]);
+for (let num = 0; num < numbers.length; num++) {
+    if(numbers[num] % 2 === 0) {
+        console.log(numbers[num] + 'は偶数です');
+}
 }
 function isEven() {
     console.log(num + 'は偶数です');
@@ -14,7 +15,7 @@ class Car {
         this.num = num;
 }
 getNumGas() {
-        console.log('ガソリンは${this.gass}です。ナンバーは${this.num}です。');
+        console.log(`ガソリンは${this.gass}です。ナンバーは${this.num}です。`);
     }
 }
 let kuruma = new Car(600, 1818);
